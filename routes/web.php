@@ -7,7 +7,9 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::resource('films', ControllerApiTest::class);
+Route::resource('movies', ControllerApiTest::class);
+Route::get('search', [ControllerApiTest::class, 'search'])->name('movies.search');
+
 Route::middleware([
     'auth:sanctum',
     config('jetstream.auth_session'),

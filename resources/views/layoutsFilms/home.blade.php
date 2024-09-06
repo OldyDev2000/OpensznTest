@@ -17,7 +17,7 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div class="navbar-nav">
-            <a class="nav-item nav-link active" href="{{ route('films.index')}}">Home</span></a>
+            <a class="nav-item nav-link active" href="{{ route('movies.index')}}">Home</span></a>
             <a class="nav-item nav-link" href="#">Home</a>
             <a class="nav-item nav-link" href="#">Show</a>
             </div>
