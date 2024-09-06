@@ -19,6 +19,4 @@ yarn-error.log
 /.idea
 /.vscode
 
-git remote add origin <remote-repository-URL>
-git push -u origin master
-git push -u origin main
+
