@@ -4,11 +4,11 @@
     <title>{{ $movie['title'] }}</title>
 </head>
 <body>
-    <h1>{{ $movie['title'] }}</h1>
-    <p>{{ $movie['overview'] }}</p>
-    <p>Sortie : {{ $movie['release_date'] }}</p>
-    <p>Note : {{ $movie['vote_average'] }}</p>
-    <img src="https://image.tmdb.org/t/p/w500{{ $movie['poster_path'] }}" alt="{{ $movie['title'] }}">
+    <h1>Informations sur le film : {{ $movie->title }}</h1>
+    <p> <b>Owerview :</b> {{ $movie->overview}}</p>
+    <p> <b>Sortie :</b> {{ $movie->release_date }}</p>
+    <p> <b>Vote : </b> {{ $movie->vote_average}}</p>
+    <p><b>Poster : </b>{{ $movie->poster_path}}</p>
     <a href="{{ route('films.index') }}">Retour</a>
 </body>
 </html>
