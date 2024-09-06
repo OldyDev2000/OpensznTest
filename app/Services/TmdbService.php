@@ -12,7 +12,7 @@ class TmdbService
         $this->apiKey = env('TMDB_API_KEY');
     }
 
-    public function getFilmsTendance($timeWindow = 'day')
+    public function getMovieTrending($timeWindow = 'day')
     {
         $response = Http::get("https://api.themoviedb.org/3/trending/movie/{$timeWindow}", [
             'api_key' => $this->apiKey
